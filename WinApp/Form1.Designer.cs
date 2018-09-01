@@ -28,13 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtNumeroUno = new System.Windows.Forms.TextBox();
+            this.txtNumeroDos = new System.Windows.Forms.TextBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // txtNumeroUno
+            // 
+            this.txtNumeroUno.Location = new System.Drawing.Point(87, 41);
+            this.txtNumeroUno.Name = "txtNumeroUno";
+            this.txtNumeroUno.Size = new System.Drawing.Size(100, 20);
+            this.txtNumeroUno.TabIndex = 0;
+            // 
+            // txtNumeroDos
+            // 
+            this.txtNumeroDos.Location = new System.Drawing.Point(87, 95);
+            this.txtNumeroDos.Name = "txtNumeroDos";
+            this.txtNumeroDos.Size = new System.Drawing.Size(100, 20);
+            this.txtNumeroDos.TabIndex = 1;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(98, 141);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.TabIndex = 2;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(269, 212);
+            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.txtNumeroDos);
+            this.Controls.Add(this.txtNumeroUno);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtNumeroUno;
+        private System.Windows.Forms.TextBox txtNumeroDos;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }
 
